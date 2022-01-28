@@ -5,10 +5,6 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: gray;
-}
-
 .logo,
 .nav__links li,
 .nav__links li a,
@@ -39,6 +35,7 @@ header {
 .nav__links li {
     /* display: inline-block; */
     padding: 10px 20px;
+    padding-top: 20px;
 }
 
 .nav__links li a {
@@ -72,13 +69,18 @@ button:hover {
     display: none;
     position: absolute;
     list-style: none;
-    background-color: white;
+    background-color: rgb(221, 217, 217);
     color: black;
     transition: all 0.5s ease;
+    box-shadow: 0 0 10px #666;
+    outline: 1px solid transparent;
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0);
+    border-radius: 5px;
 }
 
 .sub__links li {
     padding: 10px 30px;
+    transition: all 0.3s ease 0s;
 }
 
 .sub__links li a {
@@ -90,15 +92,19 @@ button:hover {
 }
 
 .sub__links li:hover {
-    background-color: rgb(218, 213, 213);
+    background-color: rgb(179, 174, 174);
 }
 
 .animation {
     height: 100vh;
-    background-color: gray;
+    background-image: url("../images/hero_1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* background-color: gray; */
 }
 
 .product {
     height: 100vh;
-    background-color: indianred;
+    background-color: rgb(131, 159, 235);
 }
